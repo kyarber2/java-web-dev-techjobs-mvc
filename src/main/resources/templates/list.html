@@ -19,13 +19,11 @@
             </tr>
             <tr>
                 <!-- TODO #2: Complete the View Jobs By Category Table. -->
-<!--            <tr>-->
-<!--                <th:block>-->
-<!--                    <th All th:href= "@{/list/jobs(column=$"></th>-->
-<!--                </th:block>-->
-<!--            </tr>-->
-
-                <td></td> <!-- Feel free to remove or modify this element if necessary. -->
+                <td>
+                    <th:block>
+                        <a th:href = "@{/list/jobs(column=all,value=all)}" >All</a>
+                    </th:block>
+                </td> <!-- Feel free to remove or modify this element if necessary.th:href= "@{/list/jobs(column=$"-->
 
                 <td th:each="category : ${tableChoices}">
                     <ul>
