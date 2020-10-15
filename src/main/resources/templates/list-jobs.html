@@ -12,8 +12,6 @@
 
     <!-- TODO #1 - Use a loop to display job results in a table. -->
     <table th:each = "job : ${jobs}" class="job-listing">
-
-        <th:block th:each="job : ${jobs}">
             <tr>
                 <th>Id: </th>
                 <td th:text = "${job.id}"></td>
